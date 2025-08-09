@@ -25,7 +25,7 @@ def filter_csv(input_file, output_file, column_name, search_string):
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("Usage: python filter_csv_columnString.py <input_file> <output_file> <column_name> <search_string>")
+        print("Usage: python csv_filter_columnString.py <input_file> <output_file> <column_name> <search_string>")
         sys.exit(1)
 
     input_file = sys.argv[1]

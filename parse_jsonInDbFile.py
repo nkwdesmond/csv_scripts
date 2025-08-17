@@ -8,7 +8,7 @@ from pathlib import Path
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Parse JSON from table in .db files.")
     parser.add_argument("-d", "--directory", required=True, help="Directory containing .db files")
-    parser.add_argument("table", help="Name of the table to extract JSON from (e.g., tbllog)")
+    parser.add_argument("table", help="Name of the table to extract JSON from (e.g., cafe_table)")
     return parser.parse_args()
 
 def extract_json_from_table(db_path, table_name):
@@ -75,4 +75,5 @@ def main():
             print(f"No JSON data found in {db_file}")
 
 if __name__ == "__main__":
+
     main()
